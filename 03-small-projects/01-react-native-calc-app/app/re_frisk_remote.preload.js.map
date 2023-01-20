@@ -1,0 +1,1 @@
+{"version":3,"sources":["re_frisk_remote/preload.cljs"],"mappings":";AAGA,AAACA","names":["re-frisk-remote.core/enable"],"sourcesContent":["(ns re-frisk-remote.preload\n (:require [re-frisk-remote.core :as re-frisk-remote]))\n\n(re-frisk-remote/enable)"]}
