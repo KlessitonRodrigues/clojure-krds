@@ -75,12 +75,12 @@
 - body scope
 
   ```clojure
-  (defn sayHelloTo [name] (
+  (defn sayHelloTo [name]
     (println "Hello" name)
     (println "Ola" name)
     (println "Konnichiwa" name)
     (println "Bonjour" name)
-  ))
+  )
   ```
 
 -
