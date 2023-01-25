@@ -1,6 +1,6 @@
 ## Clojure
 
-#### Functions
+### Functions
 
 - syntax
 
@@ -22,7 +22,7 @@
 
   (- 2 10), (\* 100 100), (/ 100 5)
 
-#### Vectors
+### Vectors
 
 - syntax
 
@@ -58,7 +58,7 @@
 
   (peek (conj [1 3] 10)) => 10
 
-#### Define functions
+### Define functions
 
 - syntax
 
@@ -88,7 +88,7 @@
     (println "Bonjour" name))
   ```
 
-  **return nill === null**
+  **return nill = null**
 
 - return last operation value
 
