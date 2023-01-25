@@ -70,7 +70,13 @@
 
 - parameters
 
+  ```clojure
   (defn sayHelloTo [name] (println "hello" name))
+  ```
+
+  ```clojure
+  (defn sayHelloTo [name lastName] (println "hello" name lastName))
+  ```
 
 - body scope
 
@@ -79,8 +85,23 @@
     (println "Hello" name)
     (println "Ola" name)
     (println "Konnichiwa" name)
-    (println "Bonjour" name)
-  )
+    (println "Bonjour" name))
   ```
 
--
+  **return nill === null**
+
+- return last operation value
+
+  ```clojure
+  (defn halfOf [number]
+    (/ number 2))
+
+  (halfOf 3000) => 1500
+  ```
+
+- name pattner
+
+  halfOf - camel case  
+  HalfOf - pascal case  
+  half_of - snale case  
+  half-of - kebad case (most used on clojure)
