@@ -4,7 +4,11 @@
 
 - syntax
 
-  ( functionName param1 )
+  (functionName param1)
+
+- print something
+
+  (println "Hello")
 
 - sum two number
 
@@ -28,7 +32,7 @@
 
 - string vector
 
-  ["a" "b" "c"] - it's direffent of ['a' 'b' 'c']
+  ["a" "b" "c"] - it's different of ['a' 'b' 'c']
 
 - dinamic type
 
@@ -41,5 +45,42 @@
 - add element
 
   (conj [1 3] 10) => [1 3 10]
+
+- remove element
+
+  (pop [1 3 5]) => [1 3])
+
+- last element
+
+  (peek [1 3 5]) => 5
+
+- add and get last element
+
+  (peek (conj [1 3] 10)) => 10
+
+#### Define functions
+
+- syntax
+
+  (defn functionName [] ()) - parmeters are always a vector of elements
+
+- body
+
+  (defn sayHello [] (println "Hello"))
+
+- parameters
+
+  (defn sayHelloTo [name] (println "hello" name))
+
+- body scope
+
+  ```clojure
+  (defn sayHelloTo [name] (
+    (println "Hello" name)
+    (println "Ola" name)
+    (println "Konnichiwa" name)
+    (println "Bonjour" name)
+  ))
+  ```
 
 -
