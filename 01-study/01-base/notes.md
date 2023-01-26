@@ -1,6 +1,6 @@
 ## Clojure
 
-### Functions
+#### Functions
 
 - syntax
 
@@ -22,7 +22,7 @@
 
   (- 2 10), (\* 100 100), (/ 100 5)
 
-### Vectors
+#### Vectors
 
 - syntax
 
@@ -58,7 +58,7 @@
 
   (peek (conj [1 3] 10)) => 10
 
-### Define functions
+#### Define functions
 
 - syntax
 
@@ -105,3 +105,23 @@
   HalfOf - pascal case  
   half_of - snale case  
   half-of - kebad case (most used on clojure)
+
+#### Immutable vector
+
+- (pop (pop (conj [1 2 3] 4)))
+
+  => conj receive a literal vector [1 2 3]
+
+  => conj cretes a new vector [1 2 3 4]
+
+  => pop creates a new vector [1 2 3]
+
+  => pop creates a new vector [1 2]
+
+  **clojure creates a new value instead of use it as a reference**
+
+#### Atoms and Refs
+
+    They're structures that can be used as a mutable data.
+
+####
