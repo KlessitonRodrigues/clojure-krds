@@ -85,7 +85,7 @@
     (println "Hello" name)
     (println "Ola" name)
     (println "Konnichiwa" name)
-    (println "Bonjour" name))
+    (println "Bonjour" name)) ; this is a commetary
   ```
 
   **return nill = null**
@@ -124,4 +124,54 @@
 
     They're structures that can be used as a mutable data.
 
-####
+#### Using Let
+
+```clojure
+(defn half-of [valor] (/ valor 2))
+```
+
+```clojure
+(defn half-of [valor]
+  (let [halfFactor 2]
+    (/ valor halfFactor)))
+```
+
+```clojure
+(defn half-sum-with-100 [valor]
+  (let [halfFactor 2
+        halfValue (/ valor halfFactor)]
+    (+ halfValue 100)))
+```
+
+#### Documented functions
+
+```clojure
+(defn half-sum-with-100
+"calc the half of a number and increment 100"
+[valor]
+  (let [halfFactor 2
+        halfValue (/ valor halfFactor)]
+    (+ halfValue 100)))
+```
+
+#### Conditional Expressions
+
+- Predicates
+
+  ```clojure
+  (defn isLessThan1000? [value]
+    (< value 1000))
+
+  (defn isMoreThan1000? [value]
+    (> value 1000))
+
+  (defn isEqual1000? [value]
+    (= value 1000))
+  ```
+
+- If
+
+```clojure
+(defn )
+
+```
