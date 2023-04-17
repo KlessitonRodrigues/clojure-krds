@@ -184,9 +184,6 @@
 ```
 
 ```clojure
-  (defn time-reduce
-    "should receive a time in seconds and reduce it to min, hour, days")
-    [seconds]
-    (if (>= seconds ))
+
 
 ```
