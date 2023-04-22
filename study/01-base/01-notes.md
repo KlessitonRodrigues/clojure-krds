@@ -179,11 +179,15 @@
 
 ```clojure
   (if (codition)
-  (if-true)
-  (if-fase))
+    (if-true)
+    (if-fase))
 ```
 
+- When
+
 ```clojure
-
-
+  (when (codition)
+    (run-this)
+    (run-this)
+    (run-this))
 ```

@@ -1,3 +1,6 @@
+; RUN:
+; clojure ./02-time-transform.clj
+
 (defn reduce-to-minutes [seconds]
     (str (quot seconds 60) " minute(s)"))
 
@@ -7,14 +10,14 @@
 (defn reduce-to-days [seconds]
     (str (quot seconds 86400) " day(s)"))
 
-(defn reduce-seconds
-    "should receive a time in seconds and reduce it to min, hour, days"
+(defn time-reduce
+    "should receive a time in seconds and reduce to min, hour, days"
     [seconds]
     (if (>= seconds 86400)
-        (time-reduce-to-days seconds)
+        (reduce-to-days seconds)
         (if (>= seconds 3600)
-           (time-reduce-to-hours seconds)
-           (time-reduce-to-minutes seconds))))
+           (reduce-to-hours seconds)
+           (reduce-to-minutes seconds))))
 
 (println "10:" (time-reduce 10))
 (println "60:" (time-reduce 60))
